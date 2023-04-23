@@ -1,3 +1,10 @@
+// import { 
+//   registerMicroApps, 
+//   start,
+//   addGlobalUncaughtErrorHandler
+// } from 'qiankun'
+// import { apps } from '../config/qiankun'
+
 // 运行时配置
 
 // 全局初始化数据配置，用于 Layout 用户信息和权限初始化
@@ -14,3 +21,21 @@ export const layout = () => {
     },
   };
 };
+
+// registerMicroApps(apps, {
+//   // 生命周期注册
+//   beforeLoad: async (app) => {
+//     console.log(app ,'load')
+
+//   },
+//   beforeMount: async (app) => {
+//     console.log(app, 'mount')
+//   }
+// });
+
+// addGlobalUncaughtErrorHandler((event) => {
+//   console.error(event)
+//   // 全局异常捕获
+// })
+
+// start();

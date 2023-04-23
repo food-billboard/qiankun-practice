@@ -19,4 +19,9 @@ export default [
       path: '/table',
       component: './Table',
   },
+  {
+    name: 'react子应用',
+    path: '/sub-react-project',
+    microApp: 'sub-react-project'
+},
 ]

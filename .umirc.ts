@@ -1,4 +1,5 @@
 import { defineConfig } from '@umijs/max';
+import { apps } from './config/qiankun'
 import routes from './config/routes'
 
 export default defineConfig({
@@ -11,6 +12,11 @@ export default defineConfig({
     title: '@umijs/max',
   },
   routes,
+  qiankun: {
+    master: {
+      apps 
+    }
+  },
   npmClient: 'yarn',
 });
 
