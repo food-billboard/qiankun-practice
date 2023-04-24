@@ -6,7 +6,9 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": "./",
     "allowJs": true,
+    "importHelpers": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -18,10 +20,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"],
+    }
   },
   "include": [
-    "src",
+    "src/**/*",
     "react-app-env.d.ts"
   ]
 }

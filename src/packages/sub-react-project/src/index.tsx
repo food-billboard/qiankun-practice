@@ -1,22 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom"
 import './index.css';
 import './publicPath'
-import App from './App';
+import routes from './routes'
+
+let root: ReactDOM.Root;
 
 // micro-app-vue/src/public-path.js
 if (!window.__POWERED_BY_QIANKUN__) {
   render()
 }
 
-let root: ReactDOM.Root
-
 function render(props?: any) {
   root?.unmount()
+
   root = ReactDOM.createRoot(
     document.getElementById('sub-react-project') as HTMLElement
   );
-  root.render( <App />);
+  const router = createHashRouter(routes);
+  root.render(<RouterProvider router={router} fallbackElement={<div>数据加载中...</div>} />);
 }
 
 /**
