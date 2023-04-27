@@ -4,6 +4,7 @@ import {
   createHashRouter,
   RouterProvider,
 } from "react-router-dom"
+import { ConfigProvider, theme } from 'antd'
 import './index.css';
 import './publicPath'
 import routes from './routes'
@@ -22,7 +23,15 @@ function render(props?: any) {
     document.getElementById('sub-react-project') as HTMLElement
   );
   const router = createHashRouter(routes);
-  root.render(<RouterProvider router={router} fallbackElement={<div>数据加载中...</div>} />);
+  root.render(
+    <ConfigProvider
+      theme={{
+        // algorithm: theme.darkAlgorithm
+      }}
+    >
+      <RouterProvider router={router} fallbackElement={<div>数据加载中...</div>} />
+    </ConfigProvider>
+  );
 }
 
 /**

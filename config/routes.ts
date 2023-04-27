@@ -23,5 +23,10 @@ export default [
     name: 'react子应用',
     path: '/sub-react-project',
     microApp: 'sub-react-project'
-},
+  },
+  {
+    name: 'vue子应用',
+    path: '/sub-vue-project',
+    microApp: 'sub-vue-project'
+  },
 ]

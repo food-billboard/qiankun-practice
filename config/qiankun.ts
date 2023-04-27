@@ -5,4 +5,10 @@ export const apps = [
     container: '#sub-react-project',
     activeRule: '/sub-react-project',
   },
+  {
+    name: 'sub-vue-project', 
+    entry: '//localhost:5001',
+    container: '#sub-vue-project',
+    activeRule: '/sub-vue-project',
+  },
 ]

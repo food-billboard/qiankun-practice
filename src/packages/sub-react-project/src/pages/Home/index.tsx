@@ -1,9 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { Button } from 'antd'
 import Loading from '@/components/Loading'
-import styles from './index.less'
-
-console.log(styles, 222)
+import styles from './index.module.less'
 
 const Home = () => {
 

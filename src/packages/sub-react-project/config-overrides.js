@@ -34,7 +34,7 @@ module.exports = {
     }),
     addLessLoader({
       javascriptEnabled: true,
-      modifyVars: { '@primary-color': '#1DA57A' },
+      // modifyVars: { '@primary-color': '#1DA57A' },
       localIdentName: '[local]--[hash:base64:5]' // 自定义 CSS Modules 的 localIdentName
     }),
     adjustStyleLoaders(({ use: [, , postcss] }) => {
