@@ -15,7 +15,8 @@
     "@ant-design/pro-components": "^2.0.1",
     "@umijs/max": "^4.0.64",
     "antd": "^5.0.0",
-    "qiankun": "^2.10.5"
+    "qiankun": "^2.10.5",
+    "zone.js": "^0.13.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

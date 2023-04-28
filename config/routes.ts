@@ -29,4 +29,9 @@ export default [
     path: '/sub-vue-project',
     microApp: 'sub-vue-project'
   },
+  {
+    name: 'angular子应用',
+    path: '/sub-angular-project',
+    microApp: 'sub-angular-project'
+  },
 ]

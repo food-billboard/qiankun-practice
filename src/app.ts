@@ -4,6 +4,7 @@
 //   addGlobalUncaughtErrorHandler
 // } from 'qiankun'
 // import { apps } from '../config/qiankun'
+import 'zone.js'
 
 // 运行时配置
 

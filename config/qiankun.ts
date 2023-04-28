@@ -11,4 +11,10 @@ export const apps = [
     container: '#sub-vue-project',
     activeRule: '/sub-vue-project',
   },
+  {
+    name: 'sub-angular-project', 
+    entry: '//localhost:5002',
+    container: '#sub-angular-project',
+    activeRule: '/sub-angular-project',
+  },
 ]

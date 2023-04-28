@@ -1,4 +1,5 @@
 import { defineConfig } from '@umijs/max';
+// import "zone.js/dist/zone"
 import { apps } from './config/qiankun'
 import routes from './config/routes'
 
