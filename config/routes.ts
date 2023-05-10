@@ -9,16 +9,16 @@ export default [
     path: '/home',
     component: './Home',
   },
-  {
-    name: '权限演示',
-    path: '/access',
-    component: './Access',
-  },
-  {
-      name: ' CRUD 示例',
-      path: '/table',
-      component: './Table',
-  },
+  // {
+  //   name: '权限演示',
+  //   path: '/access',
+  //   component: './Access',
+  // },
+  // {
+  //     name: ' CRUD 示例',
+  //     path: '/table',
+  //     component: './Table',
+  // },
   {
     name: 'react子应用',
     path: '/sub-react-project',
@@ -33,5 +33,10 @@ export default [
     name: 'angular子应用',
     path: '/sub-angular-project',
     microApp: 'sub-angular-project'
+  },
+  {
+    name: 'jquery子应用',
+    path: '/sub-jquery-project',
+    microApp: 'sub-jquery-project'
   },
 ]
