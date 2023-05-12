@@ -1,5 +1,4 @@
 import { defineConfig } from '@umijs/max';
-// import "zone.js/dist/zone"
 import { apps } from './config/qiankun'
 import routes from './config/routes'
 
@@ -12,6 +11,10 @@ export default defineConfig({
   layout: {
     title: '@umijs/max',
   },
+  // headScripts: ['https://unpkg.com/zone.js'],
+  headScripts: [
+    'https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.13.0/zone.min.js'
+  ],
   routes,
   qiankun: {
     master: {

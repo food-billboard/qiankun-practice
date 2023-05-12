@@ -22,21 +22,3 @@ export const layout = () => {
     },
   };
 };
-
-// registerMicroApps(apps, {
-//   // 生命周期注册
-//   beforeLoad: async (app) => {
-//     console.log(app ,'load')
-
-//   },
-//   beforeMount: async (app) => {
-//     console.log(app, 'mount')
-//   }
-// });
-
-// addGlobalUncaughtErrorHandler((event) => {
-//   console.error(event)
-//   // 全局异常捕获
-// })
-
-// start();

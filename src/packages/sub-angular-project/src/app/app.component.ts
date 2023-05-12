@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: '#sub-angular-project app-root',
+  selector: 'app-root#sub-angular-project',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })

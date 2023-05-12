@@ -7,6 +7,6 @@ export function assetUrl(url: string): string {
   const publicPath = __webpack_public_path__;
   const publicPathSuffix = publicPath.endsWith('/') ? '' : '/';
   const urlPrefix = url.startsWith('/') ? '' : '/';
-
+  console.log(2224444)
   return `${publicPath}${publicPathSuffix}assets${urlPrefix}${url}`;
 }

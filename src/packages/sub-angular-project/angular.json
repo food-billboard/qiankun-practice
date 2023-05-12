@@ -21,7 +21,7 @@
             "index": "src/index.html",
             "main": "src/main.single-spa.ts",
             "polyfills": [
-              "zone.js"
+              "src/polyfills.ts"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "less",
