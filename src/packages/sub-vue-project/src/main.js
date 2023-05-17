@@ -8,13 +8,22 @@ let root;
 let router 
 
 function render() {
+  const routeBase = window.__POWERED_BY_QIANKUN__ ? '/sub-vue-project' : ''
   router = createRouter({
-    history: createWebHashHistory(),
+    
+    history: createWebHashHistory(routeBase),
     routes
   })
 
   root = createApp(App)
   root.use(router)
+  root.use({
+    install(Vue) {
+      Vue.config.globalProperties.routeLinkTo = function(link) {
+        return routeBase + link 
+      }
+    }
+  })
   root.mount('#sub-vue-project')
 }
 
@@ -41,7 +50,7 @@ export async function mount(props) {
  * 应用每次 切出/卸载 会调用的方法，通常在这里我们会卸载微应用的应用实例
  */
 export async function unmount() {
-  root.$destroy()
+  root.unmount()
   root = null 
   router = null 
 }

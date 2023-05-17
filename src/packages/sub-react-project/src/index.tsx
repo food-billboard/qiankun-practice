@@ -19,11 +19,12 @@ if (!window.__POWERED_BY_QIANKUN__) {
 function render(props?: any) {
   root?.unmount()
 
-  console.log(document.getElementById('sub-react-project'), 2222)
   root = ReactDOM.createRoot(
     document.getElementById('sub-react-project') as HTMLElement
   );
-  const router = createHashRouter(routes);
+  const router = createHashRouter(routes, {
+    basename: window.__POWERED_BY_QIANKUN__ ? '/sub-react-project' : '/'
+  });
   root.render(
     <ConfigProvider
       theme={{

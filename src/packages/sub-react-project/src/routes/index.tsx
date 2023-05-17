@@ -4,12 +4,12 @@ import About from '../pages/About'
 
 const routes = [
   {
-    path: "mine",
+    path: "/mine",
     element: <Mine />,
     // loader: teamLoader,
   },
   {
-    path: "about",
+    path: "/about",
     element: <About />,
     // loader: teamLoader,
   },

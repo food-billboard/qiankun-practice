@@ -8,6 +8,9 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
+  history: {
+    type: 'hash'
+  },
   layout: {
     title: '@umijs/max',
   },
@@ -18,7 +21,13 @@ export default defineConfig({
   routes,
   qiankun: {
     master: {
-      apps 
+      apps,
+      // routes: [
+      //   {
+      //     path: '/sub-react-project/mine',
+      //     microApp: 'sub-react-project'
+      //   }
+      // ]
     }
   },
   npmClient: 'yarn',
